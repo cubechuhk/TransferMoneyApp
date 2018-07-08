@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D438ABCFCD00E176907D722 /* libPods-TransferMoneyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1423D0288BDA579C5370DB /* libPods-TransferMoneyApp.a */; };
 		8EA364B620F1E2F600BC642A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA364B520F1E2F600BC642A /* AppDelegate.m */; };
 		8EA364B920F1E2F600BC642A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA364B820F1E2F600BC642A /* ViewController.m */; };
 		8EA364BC20F1E2F600BC642A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA364BA20F1E2F600BC642A /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B1423D0288BDA579C5370DB /* libPods-TransferMoneyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransferMoneyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA364B120F1E2F600BC642A /* TransferMoneyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferMoneyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA364B420F1E2F600BC642A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EA364B520F1E2F600BC642A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8EA364C020F1E2F700BC642A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EA364C220F1E2F700BC642A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EA364C320F1E2F700BC642A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9844A37BCB6BFB7E8812CA7 /* Pods-TransferMoneyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoneyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoneyApp/Pods-TransferMoneyApp.release.xcconfig"; sourceTree = "<group>"; };
+		F78F75432E03730BD0524807 /* Pods-TransferMoneyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoneyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoneyApp/Pods-TransferMoneyApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D438ABCFCD00E176907D722 /* libPods-TransferMoneyApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				8EA364B320F1E2F600BC642A /* TransferMoneyApp */,
 				8EA364B220F1E2F600BC642A /* Products */,
+				8F00E43AE664835BEB20E4E8 /* Pods */,
+				C9CC3DD8BF4CD74EB1019887 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +65,58 @@
 		8EA364B320F1E2F600BC642A /* TransferMoneyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8EF99CD020F1EF8700D9AA5E /* Model */,
+				8EA364CA20F1E9D500BC642A /* View */,
+				8EA364CB20F1E9FC00BC642A /* Controller */,
 				8EA364B420F1E2F600BC642A /* AppDelegate.h */,
 				8EA364B520F1E2F600BC642A /* AppDelegate.m */,
-				8EA364B720F1E2F600BC642A /* ViewController.h */,
-				8EA364B820F1E2F600BC642A /* ViewController.m */,
-				8EA364BA20F1E2F600BC642A /* Main.storyboard */,
 				8EA364BD20F1E2F700BC642A /* Assets.xcassets */,
 				8EA364BF20F1E2F700BC642A /* LaunchScreen.storyboard */,
 				8EA364C220F1E2F700BC642A /* Info.plist */,
 				8EA364C320F1E2F700BC642A /* main.m */,
 			);
 			path = TransferMoneyApp;
+			sourceTree = "<group>";
+		};
+		8EA364CA20F1E9D500BC642A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EA364BA20F1E2F600BC642A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EA364CB20F1E9FC00BC642A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EA364B720F1E2F600BC642A /* ViewController.h */,
+				8EA364B820F1E2F600BC642A /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EF99CD020F1EF8700D9AA5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F00E43AE664835BEB20E4E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F78F75432E03730BD0524807 /* Pods-TransferMoneyApp.debug.xcconfig */,
+				B9844A37BCB6BFB7E8812CA7 /* Pods-TransferMoneyApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9CC3DD8BF4CD74EB1019887 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B1423D0288BDA579C5370DB /* libPods-TransferMoneyApp.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +126,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EA364C720F1E2F700BC642A /* Build configuration list for PBXNativeTarget "TransferMoneyApp" */;
 			buildPhases = (
+				33F78B4BA4C7A252C4358649 /* [CP] Check Pods Manifest.lock */,
 				8EA364AD20F1E2F600BC642A /* Sources */,
 				8EA364AE20F1E2F600BC642A /* Frameworks */,
 				8EA364AF20F1E2F600BC642A /* Resources */,
@@ -135,6 +184,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33F78B4BA4C7A252C4358649 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferMoneyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EA364AD20F1E2F600BC642A /* Sources */ = {
@@ -281,6 +351,7 @@
 		};
 		8EA364C820F1E2F700BC642A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78F75432E03730BD0524807 /* Pods-TransferMoneyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +369,7 @@
 		};
 		8EA364C920F1E2F700BC642A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9844A37BCB6BFB7E8812CA7 /* Pods-TransferMoneyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
