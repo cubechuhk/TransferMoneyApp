@@ -14,6 +14,7 @@
 		8EA364BE20F1E2F700BC642A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA364BD20F1E2F700BC642A /* Assets.xcassets */; };
 		8EA364C120F1E2F700BC642A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA364BF20F1E2F700BC642A /* LaunchScreen.storyboard */; };
 		8EA364C420F1E2F700BC642A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA364C320F1E2F700BC642A /* main.m */; };
+		8EF99CD420F201A400D9AA5E /* TMNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF99CD320F201A400D9AA5E /* TMNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		8EA364C020F1E2F700BC642A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EA364C220F1E2F700BC642A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EA364C320F1E2F700BC642A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8EF99CD220F201A400D9AA5E /* TMNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMNetworkManager.h; sourceTree = "<group>"; };
+		8EF99CD320F201A400D9AA5E /* TMNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMNetworkManager.m; sourceTree = "<group>"; };
+		8EF99CD520F25E2600D9AA5E /* TMConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMConfig.h; sourceTree = "<group>"; };
 		B9844A37BCB6BFB7E8812CA7 /* Pods-TransferMoneyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoneyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoneyApp/Pods-TransferMoneyApp.release.xcconfig"; sourceTree = "<group>"; };
 		F78F75432E03730BD0524807 /* Pods-TransferMoneyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoneyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoneyApp/Pods-TransferMoneyApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,11 +69,13 @@
 		8EA364B320F1E2F600BC642A /* TransferMoneyApp */ = {
 			isa = PBXGroup;
 			children = (
+				8EF99CD120F2014400D9AA5E /* Manager */,
 				8EF99CD020F1EF8700D9AA5E /* Model */,
 				8EA364CA20F1E9D500BC642A /* View */,
 				8EA364CB20F1E9FC00BC642A /* Controller */,
 				8EA364B420F1E2F600BC642A /* AppDelegate.h */,
 				8EA364B520F1E2F600BC642A /* AppDelegate.m */,
+				8EF99CD520F25E2600D9AA5E /* TMConfig.h */,
 				8EA364BD20F1E2F700BC642A /* Assets.xcassets */,
 				8EA364BF20F1E2F700BC642A /* LaunchScreen.storyboard */,
 				8EA364C220F1E2F700BC642A /* Info.plist */,
@@ -100,6 +106,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8EF99CD120F2014400D9AA5E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8EF99CD220F201A400D9AA5E /* TMNetworkManager.h */,
+				8EF99CD320F201A400D9AA5E /* TMNetworkManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		8F00E43AE664835BEB20E4E8 /* Pods */ = {
@@ -214,6 +229,7 @@
 				8EA364B920F1E2F600BC642A /* ViewController.m in Sources */,
 				8EA364C420F1E2F700BC642A /* main.m in Sources */,
 				8EA364B620F1E2F600BC642A /* AppDelegate.m in Sources */,
+				8EF99CD420F201A400D9AA5E /* TMNetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
