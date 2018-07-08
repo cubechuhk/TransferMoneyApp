@@ -7,5 +7,5 @@ target 'TransferMoneyApp' do
 
   # Pods for TransferMoneyApp
   pod 'AFNetworking', '~> 3.0'
-
+  pod 'JSONModel'
 end
