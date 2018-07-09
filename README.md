@@ -15,15 +15,33 @@ A showcase of a money transfer app with dummy JSON API fetch and parse written i
 ## Assumptions
 - Each user have a unique user id (uid)
 - Each user have associated with 1 account for debit or receive money
-- For the transaction API, it onlt response static JSON
-- Storyboard used in this project, however better to use XIB when collbrate with teams in actual scenario
-
+- Assume single currency support in the app (HKD)
+- For the transaction API, it only response static JSON
+- Due to static JSON and server limitation, the app uses "GET" for transaction request
+- In actual scenario, "POST" is recommended for transaction request (App Support "POST" request in Network Manager)
+- In actual scenario, better to use XIB when collbrate with teams (Storyboard is used in this project)
 
 ## API Description
 The following are the API called from the app :
 
 ## ```POST /transaction```
+
   Transfers money from one account to another. Returns successful transaction.
+  
+  *Due to static JSON and server limitation, the app uses "GET" instead of "POST" for transaction request
+  
+
+| Request |  | 
+| -----------| ------ |
+| fromUid | Unique UID indicate money transfer| 
+| toUid | Unique UID indicate money receiver| 
+| amount | Amount of money will be transfer| 
+
+| Response | | 
+| -----------| ------ |
+| tid | Unique transaction ID for user reference| 
+| tstatus | Transaction status code| 
+| ttime | Transaction time (Unix Timestamp)| 
 
   Example request:
   ```
