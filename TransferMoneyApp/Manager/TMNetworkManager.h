@@ -24,9 +24,6 @@ typedef enum {
 + (id)sharedInstance;
 + (void)releaseInstance;
 
-//- (void)performGetRequest:(NSString*)url parameters:(NSDictionary *)params;
-//- (void)performPostRequest:(NSString*)url parameters:(NSDictionary *)params;
-
 - (void)requestWithMethod:(HTTPMethod)method url:(NSString *)url parameters:(NSDictionary*)params;
 @end
 

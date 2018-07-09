@@ -39,6 +39,7 @@ static TMNetworkManager *sharedInstance = nil;
         
         self.responseSerializer = [AFJSONResponseSerializer serializer];
         self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/plain", nil];
+ 
         
         [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     }
@@ -91,50 +92,5 @@ static TMNetworkManager *sharedInstance = nil;
             break;
     }
 }
-
-/*
-- (void)performGetRequest:(NSString*)url parameters:(NSDictionary *)params
-{
-    [self GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-        //Download Progress
-        NSLog(@"downloadProgress: %@",downloadProgress);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //Return responseObject conforms responseSerializer's format
-        NSLog(@"responseObject: %@",responseObject);
-        if ([self.delegate respondsToSelector:@selector(tmNetworkManager:didFinishRequest:)]) {
-            [self.delegate tmNetworkManager:self didFinishRequest:responseObject];
-            
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //Request Fail
-        NSLog(@"error: %@",error);
-        if ([self.delegate respondsToSelector:@selector(tmNetworkManager:didFailWithError:)]) {
-            [self.delegate tmNetworkManager:self didFailWithError:error];
-        }
-    }];
-}
-
-- (void)performPostRequest:(NSString*)url parameters:(NSDictionary *)params
-{
-    [self POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
-        //Download Progress
-        NSLog(@"downloadProgress: %@",uploadProgress);
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //Return responseObject conforms responseSerializer's format
-        NSLog(@"responseObject: %@",responseObject);
-        if ([self.delegate respondsToSelector:@selector(tmNetworkManager:didFinishRequest:)]) {
-            [self.delegate tmNetworkManager:self didFinishRequest:responseObject];
-        }
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //Request Fail
-        NSLog(@"error: %@",error);
-        if ([self.delegate respondsToSelector:@selector(tmNetworkManager:didFailWithError:)]) {
-            [self.delegate tmNetworkManager:self didFailWithError:error];
-        }
-    }];
-}
-*/
-
-
 
 @end

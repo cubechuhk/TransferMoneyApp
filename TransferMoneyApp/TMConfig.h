@@ -9,8 +9,13 @@
 #ifndef TMConfig_h
 #define TMConfig_h
 
+
 //Network Request constant
 static int DEFAULT_REQUEST_TIMEOUT = 20;
-static NSString *TRANSACTION_POST_URL = @"https://reqres.in/api/users?page=2";
+//static NSString *TRANSACTION_POST_URL = @"https://chkd.myqnapcloud.com:8081/transactionapi.json";
+static NSString *TRANSACTION_POST_URL = @"https://api.myjson.com/bins/1ae8hm";
+
+
+
 
 #endif /* TMConfig_h */

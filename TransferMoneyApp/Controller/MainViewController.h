@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  TransferMoneyApp
 //
 //  Created by Dicky Chu on 8/7/2018.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TMNetworkManager.h"
 
-@interface ViewController : UIViewController <TMNetworkManagerDelegate>
+
+@interface MainViewController : UIViewController <UITextFieldDelegate>
 
 
 @end
