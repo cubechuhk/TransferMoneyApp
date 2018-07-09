@@ -51,6 +51,7 @@
     parameters[@"toUid"] = @"vjre4mxohv9ljxy6neyp";
     parameters[@"amount"] = [NSString stringWithFormat:@"%.01f",self.transferAmount];
     
+    //Actual scenario should use POST request
     [self.client requestWithMethod:GET url:TRANSACTION_POST_URL parameters:parameters];
 }
 
