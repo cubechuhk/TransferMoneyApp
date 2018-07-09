@@ -52,6 +52,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5l-Ph-Q12">
                                 <rect key="frame" x="16" y="178" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="wJR-km-kf8"/>
                                 </constraints>
@@ -79,6 +80,25 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0e-sF-zOi">
+                                <rect key="frame" x="0.0" y="540" width="375" height="127"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbU-Lx-V03">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="127"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="127" id="k1n-zy-ouL"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wbU-Lx-V03" secondAttribute="trailing" id="6C7-oI-Pb2"/>
+                                    <constraint firstItem="wbU-Lx-V03" firstAttribute="leading" secondItem="E0e-sF-zOi" secondAttribute="leading" id="A1J-l4-e1q"/>
+                                    <constraint firstItem="wbU-Lx-V03" firstAttribute="top" secondItem="E0e-sF-zOi" secondAttribute="top" id="MCe-GD-gRh"/>
+                                    <constraint firstAttribute="height" constant="127" id="kPr-lW-j2p"/>
+                                    <constraint firstAttribute="bottom" secondItem="wbU-Lx-V03" secondAttribute="bottom" id="yWT-Nr-vrN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="0.93000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -97,14 +117,20 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6nY-ea-tra" secondAttribute="trailing" constant="16" id="aCv-QV-N0X"/>
                             <constraint firstItem="hLb-y8-dau" firstAttribute="top" secondItem="EZc-l0-EJf" secondAttribute="bottom" constant="24" id="aTn-qw-Xyr"/>
                             <constraint firstItem="BV1-wm-FYs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eys-v1-1Bi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E0e-sF-zOi" secondAttribute="bottom" id="flc-LJ-adn"/>
                             <constraint firstItem="6nY-ea-tra" firstAttribute="top" secondItem="BV1-wm-FYs" secondAttribute="bottom" constant="40" id="tg4-Q0-Q3n"/>
+                            <constraint firstItem="E0e-sF-zOi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v6a-s6-npt"/>
                             <constraint firstItem="V5l-Ph-Q12" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vFF-5J-ldh"/>
                             <constraint firstItem="6Xc-gJ-Ecg" firstAttribute="top" secondItem="V5l-Ph-Q12" secondAttribute="bottom" constant="20" id="xni-wR-HVu"/>
+                            <constraint firstItem="E0e-sF-zOi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xxg-bS-uhz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="5zj-3G-mlu"/>
                     <connections>
+                        <outlet property="recipentButton" destination="V5l-Ph-Q12" id="HHs-Bq-vGS"/>
+                        <outlet property="recipentPicker" destination="wbU-Lx-V03" id="CE6-eZ-Xqg"/>
+                        <outlet property="recipentPickerView" destination="E0e-sF-zOi" id="5c2-cP-852"/>
                         <outlet property="transferAmount" destination="EZc-l0-EJf" id="CDq-lA-n0u"/>
                         <segue destination="qeP-oW-Wdg" kind="show" identifier="confirmSegue" id="mAK-ZX-SJx"/>
                     </connections>
