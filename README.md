@@ -8,7 +8,9 @@ A showcase of a money transfer app with dummy JSON API fetch and parse written i
 - JSONModel
 
 ## Screenshot
-
+![Step 1 - Input](https://github.com/cubechuhk/TransferMoneyApp/blob/master/screen1.png)
+![Step 2 - Confirmation](https://github.com/cubechuhk/TransferMoneyApp/blob/master/screen2.png)
+![Step 3 - Completion](https://github.com/cubechuhk/TransferMoneyApp/blob/master/screen3.png)
 
 ## Assumptions
 - Each user have a unique user id (uid)
