@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		4B1423D0288BDA579C5370DB /* libPods-TransferMoneyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TransferMoneyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8EA364B120F1E2F600BC642A /* TransferMoneyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferMoneyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA364B120F1E2F600BC642A /* Transfer Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transfer Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA364B420F1E2F600BC642A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8EA364B520F1E2F600BC642A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8EA364B720F1E2F600BC642A /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		8EA364B220F1E2F600BC642A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8EA364B120F1E2F600BC642A /* TransferMoneyApp.app */,
+				8EA364B120F1E2F600BC642A /* Transfer Money.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			);
 			name = TransferMoneyApp;
 			productName = TransferMoneyApp;
-			productReference = 8EA364B120F1E2F600BC642A /* TransferMoneyApp.app */;
+			productReference = 8EA364B120F1E2F600BC642A /* Transfer Money.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -410,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dickychu.TransferMoneyApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Transfer Money";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -428,7 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dickychu.TransferMoneyApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Transfer Money";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
