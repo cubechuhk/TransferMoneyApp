@@ -6,7 +6,7 @@ The app consists of 3 steps for transfer money:
 
 - Step 1: Select recipent user and Enter valid amount 
 
-- Step 2: Display the info user selected. After user click "Confirm", API will make GET request with parameters through using AFnetworking.(* See Assumptions point 4)The JSON response will be parse using JSONModel and the object is pass to the Result View.
+- Step 2: Display the info user selected. After user click "Confirm", API will make GET request with parameters through using AFnetworking.(* See Assumptions point 5)The JSON response will be parse using JSONModel and the object is pass to the Result View.
 		
 - Step 3: Display the transaction result from JSON response
 
